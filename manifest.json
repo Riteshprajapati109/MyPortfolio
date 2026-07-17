@@ -1,0 +1,27 @@
+{
+  "name": "Ritesh Prajapati — Frappe Developer Portfolio",
+  "short_name": "Ritesh.dev",
+  "description": "Frappe Developer | ERPNext | Python | REST API — Ritesh Prajapati's premium developer portfolio",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0a0f",
+  "theme_color": "#00d4ff",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "assets/images/profile.jpg",
+      "sizes": "192x192",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "assets/images/profile.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["portfolio", "developer", "personal"],
+  "lang": "en",
+  "dir": "ltr"
+}
