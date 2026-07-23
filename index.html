@@ -1,0 +1,1314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Ritesh Prajapati — Frappe Developer, ERPNext Specialist & Python Engineer. Building scalable ERP & web solutions. Based in Indore, India." />
+  <meta name="keywords"
+    content="Ritesh Prajapati, Frappe Developer, ERPNext, Python, REST API, ERP, Indore, Procure Infotech" />
+  <meta name="author" content="Ritesh Prajapati" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Ritesh Prajapati — Frappe Developer & ERP Engineer" />
+  <meta property="og:description"
+    content="Premium developer portfolio. Frappe, ERPNext, Python, REST APIs. Based in Indore, India." />
+  <meta property="og:image" content="assets/images/profile.jpg" />
+  <meta property="og:url" content="https://riteshprajapati.dev" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Ritesh Prajapati — Frappe Developer" />
+  <meta name="twitter:description" content="Frappe Developer | ERPNext | Python | REST API Development" />
+  <meta name="theme-color" content="#0a0a0f" />
+  <link rel="manifest" href="manifest.json" />
+  <title>Ritesh Prajapati — Frappe Developer & ERP Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500;600;700&family=Syne:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+
+  <!-- ══ CUSTOM CURSOR ══ -->
+  <div id="cursor" class="cursor"></div>
+  <div id="cursor-follower" class="cursor-follower"></div>
+
+  <!-- ══ LOADING SCREEN ══ -->
+  <div id="loader" class="loader">
+    <div class="loader-bg"></div>
+    <div class="loader-content">
+      <div class="loader-logo">
+        <svg viewBox="0 0 100 100" class="loader-svg">
+          <polygon class="loader-hex" points="50,5 95,27.5 95,72.5 50,95 5,72.5 5,27.5" />
+          <text x="50" y="58" text-anchor="middle" class="loader-initial">R</text>
+        </svg>
+      </div>
+      <div class="loader-text">
+        <span class="loader-name">RITESH PRAJAPATI</span>
+        <div class="loader-bar-wrap">
+          <div class="loader-bar"></div>
+        </div>
+        <span class="loader-status">Initializing Experience...</span>
+      </div>
+    </div>
+    <div class="loader-particles" id="loader-particles"></div>
+  </div>
+
+  <!-- ══ SCROLL PROGRESS ══ -->
+  <div id="scroll-progress" class="scroll-progress"></div>
+
+  <!-- ══ NAVIGATION ══ -->
+  <nav id="navbar" class="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <svg viewBox="0 0 40 40" width="36" height="36">
+          <polygon points="20,2 38,11 38,29 20,38 2,29 2,11" fill="none" stroke="url(#navGrad)" stroke-width="2" />
+          <text x="20" y="26" text-anchor="middle" fill="url(#navGrad)" font-size="16" font-weight="700"
+            font-family="Space Grotesk">R</text>
+          <defs>
+            <linearGradient id="navGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#00d4ff" />
+              <stop offset="100%" stop-color="#7c3aed" />
+            </linearGradient>
+          </defs>
+        </svg>
+        <span>Ritesh</span>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+        <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
+        <li><a href="#experience" class="nav-link" data-section="experience">Experience</a></li>
+        <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
+        <li><a href="#terminal" class="nav-link" data-section="terminal">Terminal</a></li>
+        <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button id="theme-toggle" class="btn-icon" title="Toggle theme" aria-label="Toggle dark/light mode">
+          <svg id="theme-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor"
+            stroke-width="2">
+            <circle cx="12" cy="12" r="5" />
+            <line x1="12" y1="1" x2="12" y2="3" />
+            <line x1="12" y1="21" x2="12" y2="23" />
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+            <line x1="1" y1="12" x2="3" y2="12" />
+            <line x1="21" y1="12" x2="23" y2="12" />
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+          </svg>
+        </button>
+        <button id="cmd-palette-btn" class="btn-icon" title="Command Palette (Ctrl+K)"
+          aria-label="Open command palette">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="3" y="3" width="18" height="18" rx="3" />
+            <path d="M8 12h8M12 8l4 4-4 4" />
+          </svg>
+        </button>
+        <a href="assets/resume/Ritesh_Prajapati_Resume.docx" download id="resume-dl" class="btn-primary btn-sm">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+            <polyline points="7 10 12 15 17 10" />
+            <line x1="12" y1="15" x2="12" y2="3" />
+          </svg>
+          Resume
+        </a>
+      </div>
+      <button id="menu-toggle" class="menu-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ══ COMMAND PALETTE ══ -->
+  <div id="cmd-palette" class="cmd-palette" role="dialog" aria-label="Command palette">
+    <div class="cmd-backdrop" id="cmd-backdrop"></div>
+    <div class="cmd-modal">
+      <div class="cmd-search">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="11" cy="11" r="8" />
+          <line x1="21" y1="21" x2="16.65" y2="16.65" />
+        </svg>
+        <input type="text" id="cmd-input" placeholder="Type a command or search..." autocomplete="off" />
+        <span class="cmd-esc">ESC</span>
+      </div>
+      <div class="cmd-results" id="cmd-results"></div>
+    </div>
+  </div>
+
+  <!-- ══ MOUSE SPOTLIGHT ══ -->
+  <div id="spotlight" class="spotlight"></div>
+
+  <!-- ══ HERO SECTION ══ -->
+  <section id="hero" class="hero">
+    <canvas id="hero-canvas" class="hero-canvas"></canvas>
+    <div class="hero-aurora"></div>
+    <div class="hero-grid"></div>
+
+    <div class="hero-container">
+      <div class="hero-left">
+        <div class="hero-badge reveal-up">
+          <span class="hero-badge-dot"></span>
+          <span>Available for opportunities</span>
+        </div>
+
+        <h1 class="hero-name reveal-up" data-delay="100">
+          <span class="hero-name-line">Ritesh</span>
+          <span class="hero-name-line gradient-text">Prajapati</span>
+        </h1>
+
+        <div class="hero-title reveal-up" data-delay="200">
+          <span class="title-prefix">I build</span>
+          <div class="hero-typewriter">
+            <span id="typewriter-text"></span>
+            <span class="typewriter-cursor">|</span>
+          </div>
+        </div>
+
+        <p class="hero-desc reveal-up" data-delay="300">
+          Frappe Developer with 1+ year of professional experience building and customizing ERP &amp; web
+          applications. Started as a <strong>Software Developer Trainee</strong> at Devaditya Technocrats LLP, now
+          working as a <strong>Frappe Developer at Procure Infotech</strong>, delivering custom DocTypes, REST APIs,
+          and workflow automation across procurement, healthcare, and HRMS domains.
+        </p>
+
+        <div class="hero-tags reveal-up" data-delay="400">
+          <span class="hero-tag">🐍 Python</span>
+          <span class="hero-tag">⚡ Frappe</span>
+          <span class="hero-tag">🔗 REST API</span>
+          <span class="hero-tag">🏢 ERPNext</span>
+          <span class="hero-tag">🐧 Linux</span>
+        </div>
+
+        <div class="hero-ctas reveal-up" data-delay="500">
+          <a href="#projects" class="btn-primary btn-lg">
+            <span>View My Work</span>
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </a>
+          <a href="#contact" class="btn-glass btn-lg">
+            <span>Let's Talk</span>
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+            </svg>
+          </a>
+        </div>
+
+        <div class="hero-socials reveal-up" data-delay="600">
+          <a href="https://github.com/Riteshprajapati109" target="_blank" rel="noopener" class="social-link"
+            aria-label="GitHub">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+              <path
+                d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z" />
+            </svg>
+          </a>
+          <a href="https://linkedin.com/in/ritesh-prajapati109" target="_blank" rel="noopener" class="social-link"
+            aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+              <path
+                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+            </svg>
+          </a>
+          <a href="mailto:riteshprajapati167@gmail.com" class="social-link" aria-label="Email">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+              <polyline points="22,6 12,13 2,6" />
+            </svg>
+          </a>
+          <a href="tel:+919770791263" class="social-link" aria-label="Phone">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+              <path
+                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-right reveal-right" data-delay="200">
+        <div class="profile-container">
+          <div class="profile-ring-1"></div>
+          <div class="profile-ring-2"></div>
+          <div class="profile-ring-3"></div>
+          <div class="profile-glow"></div>
+          <div class="profile-image-wrap" id="profile-tilt">
+            <img src="assets/images/profile.jpeg" alt="Ritesh Prajapati" class="profile-img" loading="eager" />
+            <div class="profile-overlay"></div>
+          </div>
+          <div class="profile-badge profile-badge-1">
+            <span class="badge-icon">⚡</span>
+            <div><span class="badge-label">Current Role</span><span class="badge-value">Frappe Dev</span></div>
+          </div>
+          <div class="profile-badge profile-badge-2">
+            <span class="badge-icon">🏢</span>
+            <div><span class="badge-label">Company</span><span class="badge-value">Procure Infotech</span></div>
+          </div>
+          <div class="profile-badge profile-badge-3">
+            <span class="badge-icon">📍</span>
+            <div><span class="badge-label">Location</span><span class="badge-value">Indore, India</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-scroll-hint">
+      <div class="scroll-mouse">
+        <div class="scroll-wheel"></div>
+      </div>
+      <span>Scroll to explore</span>
+    </div>
+  </section>
+
+  <!-- ══ MARQUEE ══ -->
+  <div class="marquee-section">
+    <div class="marquee-track">
+      <div class="marquee-content" id="marquee-1">
+        <span>Frappe Framework</span><span class="marquee-dot">◆</span>
+        <span>ERPNext</span><span class="marquee-dot">◆</span>
+        <span>Python</span><span class="marquee-dot">◆</span>
+        <span>REST API</span><span class="marquee-dot">◆</span>
+        <span>Django</span><span class="marquee-dot">◆</span>
+        <span>MariaDB</span><span class="marquee-dot">◆</span>
+        <span>Linux</span><span class="marquee-dot">◆</span>
+        <span>JavaScript</span><span class="marquee-dot">◆</span>
+        <span>Jinja2</span><span class="marquee-dot">◆</span>
+        <span>Git</span><span class="marquee-dot">◆</span>
+        <span>DocTypes</span><span class="marquee-dot">◆</span>
+        <span>Workflow Automation</span><span class="marquee-dot">◆</span>
+      </div>
+      <div class="marquee-content" aria-hidden="true">
+        <span>Frappe Framework</span><span class="marquee-dot">◆</span>
+        <span>ERPNext</span><span class="marquee-dot">◆</span>
+        <span>Python</span><span class="marquee-dot">◆</span>
+        <span>REST API</span><span class="marquee-dot">◆</span>
+        <span>Django</span><span class="marquee-dot">◆</span>
+        <span>MariaDB</span><span class="marquee-dot">◆</span>
+        <span>Linux</span><span class="marquee-dot">◆</span>
+        <span>JavaScript</span><span class="marquee-dot">◆</span>
+        <span>Jinja2</span><span class="marquee-dot">◆</span>
+        <span>Git</span><span class="marquee-dot">◆</span>
+        <span>DocTypes</span><span class="marquee-dot">◆</span>
+        <span>Workflow Automation</span><span class="marquee-dot">◆</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══ STATISTICS SECTION ══ -->
+  <section id="stats" class="stats-section">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-card reveal-up" data-delay="0">
+          <div class="stat-icon">🚀</div>
+          <div class="stat-number" data-target="15" data-suffix="+">0</div>
+          <div class="stat-label">Projects Delivered</div>
+        </div>
+        <div class="stat-card reveal-up" data-delay="100">
+          <div class="stat-icon">⏱️</div>
+          <div class="stat-number" data-target="1" data-suffix="+ yr">0</div>
+          <div class="stat-label">Industry Experience</div>
+        </div>
+        <div class="stat-card reveal-up" data-delay="200">
+          <div class="stat-icon">🔌</div>
+          <div class="stat-number" data-target="50" data-suffix="+">0</div>
+          <div class="stat-label">REST APIs Built</div>
+        </div>
+        <div class="stat-card reveal-up" data-delay="300">
+          <div class="stat-icon">🧩</div>
+          <div class="stat-number" data-target="30" data-suffix="+">0</div>
+          <div class="stat-label">Custom DocTypes</div>
+        </div>
+        <div class="stat-card reveal-up" data-delay="400">
+          <div class="stat-icon">☕</div>
+          <div class="stat-number" data-target="1200" data-suffix="+">0</div>
+          <div class="stat-label">Cups of Coffee</div>
+        </div>
+        <div class="stat-card reveal-up" data-delay="500">
+          <div class="stat-icon">💻</div>
+          <div class="stat-number" data-target="25000" data-suffix="+">0</div>
+          <div class="stat-label">Lines of Code</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ ABOUT SECTION ══ -->
+  <section id="about" class="about-section">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-label">WHO I AM</span>
+        <h2 class="section-title">Crafting Digital <span class="gradient-text">Experiences</span></h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-story reveal-left">
+          <div class="about-card glass-card">
+            <div class="about-quote">"</div>
+            <p class="about-text">I'm a <strong>Frappe & ERPNext Developer</strong> with a passion for building
+              scalable, production-ready ERP and web solutions. I thrive at the intersection of business logic and clean
+              code — translating complex functional requirements into elegant software.</p>
+            <p class="about-text">I began my career as a <strong>Software Developer Trainee at Devaditya Technocrats
+              LLP, Indore</strong> (Jul 2025 – Feb 2026), where I honed backend Python development, data pipeline
+              optimization, and Linux server deployment. I am now a <strong>Frappe Developer at Procure Infotech,
+              Indore</strong> (Mar 2026 – Present), working across procurement, healthcare (PHIR Health), and HRMS
+              (VProCURE) domains — engineering custom modules, REST APIs, workflow automations, and responsive
+              interfaces.</p>
+            <p class="about-text">I hold an <strong>MCA from RGPV University</strong> (CGPA 7.68) and a B.Sc. in
+              Computer Science from DAVV University. Quick learner, detail-oriented, and comfortable working directly
+              with functional consultants and clients.</p>
+            <div class="about-info-grid">
+              <div class="about-info-item">
+                <span class="info-label">📧 Email</span>
+                <a href="mailto:riteshprajapati167@gmail.com" class="info-value">riteshprajapati167@gmail.com</a>
+              </div>
+              <div class="about-info-item">
+                <span class="info-label">📱 Phone</span>
+                <span class="info-value">+91-9770791263</span>
+              </div>
+              <div class="about-info-item">
+                <span class="info-label">📍 Location</span>
+                <span class="info-value">Indore, Madhya Pradesh, India</span>
+              </div>
+              <div class="about-info-item">
+                <span class="info-label">🎓 Education</span>
+                <span class="info-value">MCA — RGPV University</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-timeline reveal-right">
+          <h3 class="timeline-heading">My Journey</h3>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content glass-card">
+                <span class="timeline-date">Mar 2026 - Present</span>
+                <h4>Frappe Developer</h4>
+                <p>Procure Infotech, Indore</p>
+                <p class="timeline-desc">Engineering custom ERP modules, REST APIs, and workflow automation for
+                  procurement, healthcare, and HRMS clients.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content glass-card">
+                <span class="timeline-date">Jul 2025 - Feb 2026</span>
+                <h4>Software Developer Trainee</h4>
+                <p>Devaditya Technocrats LLP, Indore</p>
+                <p class="timeline-desc">Built backend modules in Python on Linux, optimized data pipelines, and
+                  automated deployment workflows.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content glass-card">
+                <span class="timeline-date">2023 — 2025</span>
+                <h4>Master of Computer Applications</h4>
+                <p>RGPV University — CGPA: 7.68</p>
+                <p class="timeline-desc">Advanced studies in software engineering, databases, distributed systems, and
+                  cloud computing.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content glass-card">
+                <span class="timeline-date">2020 — 2023</span>
+                <h4>B.Sc. Computer Science</h4>
+                <p>DAVV University — 68.78%</p>
+                <p class="timeline-desc">Foundation in programming, algorithms, data structures, and computer networks.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ SKILLS SECTION ══ -->
+  <section id="skills" class="skills-section">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-label">EXPERTISE</span>
+        <h2 class="section-title">Skills & <span class="gradient-text">Technologies</span></h2>
+        <p class="section-subtitle">A full-stack arsenal for building modern ERP and web applications</p>
+      </div>
+
+      <div class="skills-universe" id="skills-universe">
+        <canvas id="skills-canvas" class="skills-canvas"></canvas>
+        <div class="skills-center">
+          <div class="skills-center-text">
+            <span id="skill-center-name">Hover a skill</span>
+            <span id="skill-center-cat"></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="skills-categories reveal-up">
+        <div class="skill-cat-grid">
+          <div class="skill-cat glass-card" data-category="languages">
+            <div class="skill-cat-icon">🐍</div>
+            <h3>Languages</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">SQL</span>
+              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">HTML5</span>
+              <span class="skill-tag">CSS3</span>
+              <span class="skill-tag">Shell Script</span>
+            </div>
+          </div>
+          <div class="skill-cat glass-card" data-category="frameworks">
+            <div class="skill-cat-icon">⚡</div>
+            <h3>Frameworks & ERP</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Frappe Framework</span>
+              <span class="skill-tag">ERPNext</span>
+              <span class="skill-tag">Django</span>
+              <span class="skill-tag">Bootstrap</span>
+            </div>
+          </div>
+          <div class="skill-cat glass-card" data-category="frappe">
+            <div class="skill-cat-icon">🏗️</div>
+            <h3>Frappe / ERP Dev</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Custom DocTypes</span>
+              <span class="skill-tag">Server Scripts</span>
+              <span class="skill-tag">Client Scripts</span>
+              <span class="skill-tag">Jinja Print Formats</span>
+              <span class="skill-tag">Query Reports</span>
+              <span class="skill-tag">Hooks</span>
+              <span class="skill-tag">Role-Based Workflows</span>
+              <span class="skill-tag">REST API Dev</span>
+            </div>
+          </div>
+          <div class="skill-cat glass-card" data-category="databases">
+            <div class="skill-cat-icon">🗄️</div>
+            <h3>Databases & Tools</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">MariaDB</span>
+              <span class="skill-tag">SSMS</span>
+              <span class="skill-tag">Frappe Bench</span>
+              <span class="skill-tag">Git</span>
+              <span class="skill-tag">GitHub</span>
+              <span class="skill-tag">VS Code</span>
+            </div>
+          </div>
+          <div class="skill-cat glass-card" data-category="platforms">
+            <div class="skill-cat-icon">🐧</div>
+            <h3>Platforms & DevOps</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Linux Server Admin</span>
+              <span class="skill-tag">Shell Scripting</span>
+              <span class="skill-tag">Multi-Site Deployment</span>
+            </div>
+          </div>
+          <div class="skill-cat glass-card" data-category="concepts">
+            <div class="skill-cat-icon">🧠</div>
+            <h3>Core Concepts</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">OOP</span>
+              <span class="skill-tag">REST API Design</span>
+              <span class="skill-tag">Database Design</span>
+              <span class="skill-tag">Workflow Automation</span>
+              <span class="skill-tag">Agile Collaboration</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ EXPERIENCE SECTION ══ -->
+  <section id="experience" class="experience-section">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-label">CAREER</span>
+        <h2 class="section-title">Professional <span class="gradient-text">Experience</span></h2>
+      </div>
+
+      <div class="exp-timeline">
+        <div class="exp-item reveal-up" data-delay="0">
+          <div class="exp-connector">
+            <div class="exp-dot"></div>
+            <div class="exp-line"></div>
+          </div>
+          <div class="exp-card glass-card tilt-card">
+            <div class="exp-header">
+              <div class="exp-company-logo">
+                <svg viewBox="0 0 50 50" width="48" height="48">
+                  <rect width="50" height="50" rx="12" fill="url(#expGrad1)" /><text x="25" y="33" text-anchor="middle"
+                    fill="white" font-size="20" font-weight="bold" font-family="Space Grotesk">P</text>
+                  <defs>
+                    <linearGradient id="expGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%" stop-color="#00d4ff" />
+                      <stop offset="100%" stop-color="#7c3aed" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </div>
+              <div class="exp-meta">
+                <h3 class="exp-role">Frappe Developer</h3>
+                <p class="exp-company">Procure Infotech, Indore</p>
+                <span class="exp-duration">Mar 2026 - Present</span>
+              </div>
+              <span class="exp-status exp-current">Current</span>
+            </div>
+            <ul class="exp-achievements">
+              <li>Engineer custom Frappe applications and ERPNext modules including DocTypes, server scripts, and client
+                scripts tailored to procurement business workflows</li>
+              <li>Design and expose REST APIs through Frappe's whitelisted methods, enabling seamless integration with
+                third-party services</li>
+              <li>Build Jinja-based print formats and custom reports using Frappe's Report Builder and Query Reports to
+                support business reporting needs</li>
+              <li>Own Frappe Bench setup, multi-site configuration, and deployment on Linux servers, ensuring stable and
+                reliable environments</li>
+              <li>Translate functional consultant specifications into working procurement and inventory workflows within
+                ERPNext</li>
+            </ul>
+            <div class="exp-tech">
+              <span>Frappe</span><span>ERPNext</span><span>Python</span><span>JavaScript</span><span>MariaDB</span><span>Linux</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="exp-item reveal-up" data-delay="200">
+          <div class="exp-connector">
+            <div class="exp-dot"></div>
+          </div>
+          <div class="exp-card glass-card tilt-card">
+            <div class="exp-header">
+              <div class="exp-company-logo">
+                <svg viewBox="0 0 50 50" width="48" height="48">
+                  <rect width="50" height="50" rx="12" fill="url(#expGrad2)" /><text x="25" y="33" text-anchor="middle"
+                    fill="white" font-size="20" font-weight="bold" font-family="Space Grotesk">D</text>
+                  <defs>
+                    <linearGradient id="expGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%" stop-color="#f59e0b" />
+                      <stop offset="100%" stop-color="#ef4444" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </div>
+              <div class="exp-meta">
+                <h3 class="exp-role">Software Developer Trainee</h3>
+                <p class="exp-company">Devaditya Technocrats LLP, Indore</p>
+                <span class="exp-duration">Jul 2025 - Feb 2026</span>
+              </div>
+            </div>
+            <ul class="exp-achievements">
+              <li>Built and optimized backend software modules in a Linux environment using Python, SQL, and Shell
+                scripting</li>
+              <li>Improved backend performance and data-handling efficiency through algorithmic optimization and code
+                refactoring</li>
+              <li>Managed toll data processing and database operations, maintaining data accuracy and system reliability
+              </li>
+              <li>Automated deployment tasks and daily system workflows using Python and Shell scripts, reducing manual
+                effort</li>
+              <li>Debugged and maintained system modules, ensuring smooth toll operations with minimal downtime</li>
+            </ul>
+            <div class="exp-tech">
+              <span>Python</span><span>SQL</span><span>Shell Script</span><span>Linux</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ PROJECTS SECTION ══ -->
+  <section id="projects" class="projects-section">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-label">CASE STUDIES</span>
+        <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+        <p class="section-subtitle">Not just projects — stories of problems solved and value delivered</p>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- Project 1 -->
+        <div class="project-card glass-card tilt-card reveal-up" data-delay="0">
+          <div class="project-visual">
+            <div class="project-mockup project-mockup-health">
+              <div class="mockup-bar"><span></span><span></span><span></span></div>
+              <div class="mockup-content">
+                <div class="mockup-sidebar">
+                  <div class="mockup-nav-item active"></div>
+                  <div class="mockup-nav-item"></div>
+                  <div class="mockup-nav-item"></div>
+                  <div class="mockup-nav-item"></div>
+                </div>
+                <div class="mockup-main">
+                  <div class="mockup-card-row">
+                    <div class="mockup-stat-card cyan"></div>
+                    <div class="mockup-stat-card purple"></div>
+                    <div class="mockup-stat-card blue"></div>
+                  </div>
+                  <div class="mockup-table">
+                    <div class="mockup-row"></div>
+                    <div class="mockup-row"></div>
+                    <div class="mockup-row"></div>
+                    <div class="mockup-row"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="project-number">01</div>
+          </div>
+          <div class="project-info">
+            <div class="project-category">Healthcare · ERP</div>
+            <h3 class="project-title">PHIR Health — Healthcare Records Platform</h3>
+            <p class="project-desc">A Frappe-based healthcare platform enabling patients to securely manage, organize,
+              access, and share medical records — built with role-based access and HIPAA-aligned data security.</p>
+            <div class="project-highlights">
+              <div class="highlight-item">
+                <span class="highlight-icon">🔐</span>
+                <span>Role-based access workflows for patient data security</span>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-icon">⚡</span>
+                <span>Custom DocTypes, REST APIs, Server & Client Scripts</span>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-icon">📄</span>
+                <span>Jinja print templates + Query Reports for healthcare ops</span>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-icon">🖥️</span>
+                <span>Responsive frontend integrated with Python-based backend</span>
+              </div>
+            </div>
+            <div class="project-tech-stack">
+              <span>Frappe</span><span>Python</span><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Bootstrap</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://github.com/Riteshprajapati109" target="_blank" class="btn-glass btn-sm">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                  <path
+                    d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z" />
+                </svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card glass-card tilt-card reveal-up" data-delay="150">
+          <div class="project-visual">
+            <div class="project-mockup project-mockup-hrms">
+              <div class="mockup-bar"><span></span><span></span><span></span></div>
+              <div class="mockup-content">
+                <div class="mockup-sidebar">
+                  <div class="mockup-nav-item active"></div>
+                  <div class="mockup-nav-item"></div>
+                  <div class="mockup-nav-item"></div>
+                  <div class="mockup-nav-item"></div>
+                </div>
+                <div class="mockup-main">
+                  <div class="mockup-header-bar"></div>
+                  <div class="mockup-card-row">
+                    <div class="mockup-stat-card amber"></div>
+                    <div class="mockup-stat-card green"></div>
+                  </div>
+                  <div class="mockup-chart"></div>
+                </div>
+              </div>
+            </div>
+            <div class="project-number">02</div>
+          </div>
+          <div class="project-info">
+            <div class="project-category">HRMS · ERP · Dashboard</div>
+            <h3 class="project-title">VProCURE HRMS — HR Management System</h3>
+            <p class="project-desc">A comprehensive HRMS built on Frappe/ERPNext covering leave management, attendance,
+              performance appraisals, expenses, salary slips, and asset management — with a real-time Daily Check-In
+              Dashboard.</p>
+            <div class="project-highlights">
+              <div class="highlight-item">
+                <span class="highlight-icon">📊</span>
+                <span>Daily Check-In Dashboard for real-time HR visibility</span>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-icon">🔄</span>
+                <span>Custom screens, workflows, and business logic aligned to client needs</span>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-icon">📋</span>
+                <span>Frappe reports, dashboards, REST APIs, Client & Server Scripts</span>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-icon">🛠️</span>
+                <span>Bug resolution improving stability of existing HRMS functionality</span>
+              </div>
+            </div>
+            <div class="project-tech-stack">
+              <span>Frappe</span><span>ERPNext</span><span>Python</span><span>JavaScript</span><span>MariaDB</span><span>Bootstrap</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://github.com/Riteshprajapati109" target="_blank" class="btn-glass btn-sm">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                  <path
+                    d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z" />
+                </svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card glass-card tilt-card reveal-up" data-delay="300">
+          <div class="project-visual">
+            <div class="project-mockup project-mockup-agro">
+              <div class="mockup-bar"><span></span><span></span><span></span></div>
+              <div class="mockup-content">
+                <div class="mockup-main full">
+                  <div class="mockup-hero-bar green-bar"></div>
+                  <div class="mockup-product-grid">
+                    <div class="mockup-product-card"></div>
+                    <div class="mockup-product-card"></div>
+                    <div class="mockup-product-card"></div>
+                    <div class="mockup-product-card"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="project-number">03</div>
+          </div>
+          <div class="project-info">
+            <div class="project-category">E-Commerce · Django · Academic</div>
+            <h3 class="project-title">Agroplast — E-Commerce Platform for Agriculture</h3>
+            <p class="project-desc">A fully responsive e-commerce platform for agricultural products built end-to-end
+              with Django and vanilla JavaScript — featuring Razorpay payment integration, automated order confirmation,
+              bill generation, and SMS notifications.</p>
+            <div class="project-highlights">
+              <div class="highlight-item">
+                <span class="highlight-icon">💳</span>
+                <span>Razorpay payment gateway for secure online transactions</span>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-icon">📱</span>
+                <span>SMS notifications for order confirmation and updates</span>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-icon">🛒</span>
+                <span>Full cart management and automated bill generation</span>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-icon">📱</span>
+                <span>Fully responsive design with vanilla JavaScript frontend</span>
+              </div>
+            </div>
+            <div class="project-tech-stack">
+              <span>Python</span><span>Django</span><span>HTML</span><span>CSS</span><span>JavaScript</span><span>SQL</span><span>Razorpay</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://github.com/Riteshprajapati109" target="_blank" class="btn-glass btn-sm">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                  <path
+                    d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z" />
+                </svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ TERMINAL SECTION ══ -->
+  <section id="terminal" class="terminal-section">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-label">INTERACTIVE</span>
+        <h2 class="section-title">Developer <span class="gradient-text">Terminal</span></h2>
+        <p class="section-subtitle">Type commands to explore — try <code>help</code> to get started</p>
+      </div>
+
+      <div class="terminal-wrapper reveal-up" data-delay="200">
+        <div class="terminal">
+          <div class="terminal-titlebar">
+            <div class="terminal-dots">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+            </div>
+            <span class="terminal-title">ritesh@portfolio ~ bash</span>
+            <div class="terminal-icons">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="3" width="18" height="18" rx="2" />
+              </svg>
+            </div>
+          </div>
+          <div class="terminal-body" id="terminal-body">
+            <div class="terminal-output" id="terminal-output">
+              <div class="terminal-line">
+                <span class="t-prompt">ritesh@portfolio</span><span class="t-sep">:</span><span
+                  class="t-path">~</span><span class="t-sym">$</span>
+                <span class="t-cmd"> Welcome to Ritesh's Portfolio Terminal v2.0</span>
+              </div>
+              <div class="terminal-line t-info">Type <span class="t-highlight">help</span> to see available commands.
+              </div>
+            </div>
+            <div class="terminal-input-line">
+              <span class="t-prompt">ritesh@portfolio</span><span class="t-sep">:</span><span
+                class="t-path">~</span><span class="t-sym">$</span>
+              <input type="text" id="terminal-input" class="terminal-input" autocomplete="off" spellcheck="false"
+                aria-label="Terminal input" placeholder=" " />
+              <span class="terminal-cursor-blink">▋</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ GITHUB SECTION ══ -->
+  <section id="github" class="github-section">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-label">OPEN SOURCE</span>
+        <h2 class="section-title">GitHub <span class="gradient-text">Activity</span></h2>
+      </div>
+
+      <div class="github-grid reveal-up">
+        <div class="github-profile-card glass-card">
+          <div class="github-avatar">
+            <svg viewBox="0 0 24 24" width="48" height="48" fill="currentColor">
+              <path
+                d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z" />
+            </svg>
+          </div>
+          <h3>Riteshprajapati109</h3>
+          <p>Frappe Developer · Python · ERP</p>
+          <a href="https://github.com/Riteshprajapati109" target="_blank" class="btn-primary btn-sm">View Profile</a>
+        </div>
+
+        <div class="github-contrib-card glass-card">
+          <h3>Contribution Graph</h3>
+          <div class="contrib-graph" id="contrib-graph"></div>
+          <div class="contrib-legend">
+            <span>Less</span>
+            <div class="contrib-cells">
+              <div class="contrib-cell level-0"></div>
+              <div class="contrib-cell level-1"></div>
+              <div class="contrib-cell level-2"></div>
+              <div class="contrib-cell level-3"></div>
+              <div class="contrib-cell level-4"></div>
+            </div>
+            <span>More</span>
+          </div>
+        </div>
+
+        <div class="github-langs-card glass-card">
+          <h3>Top Languages</h3>
+          <div class="lang-bars">
+            <div class="lang-bar-item">
+              <div class="lang-info"><span class="lang-dot" style="background:#3572A5"></span>Python</div>
+              <div class="lang-bar-wrap">
+                <div class="lang-bar" data-width="60" style="background:#3572A5"></div>
+              </div>
+              <span class="lang-pct">60%</span>
+            </div>
+            <div class="lang-bar-item">
+              <div class="lang-info"><span class="lang-dot" style="background:#f1e05a"></span>JavaScript</div>
+              <div class="lang-bar-wrap">
+                <div class="lang-bar" data-width="20" style="background:#f1e05a"></div>
+              </div>
+              <span class="lang-pct">20%</span>
+            </div>
+            <div class="lang-bar-item">
+              <div class="lang-info"><span class="lang-dot" style="background:#e34c26"></span>HTML/CSS</div>
+              <div class="lang-bar-wrap">
+                <div class="lang-bar" data-width="12" style="background:#e34c26"></div>
+              </div>
+              <span class="lang-pct">12%</span>
+            </div>
+            <div class="lang-bar-item">
+              <div class="lang-info"><span class="lang-dot" style="background:#89e051"></span>Shell</div>
+              <div class="lang-bar-wrap">
+                <div class="lang-bar" data-width="8" style="background:#89e051"></div>
+              </div>
+              <span class="lang-pct">8%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ ACHIEVEMENTS SECTION ══ -->
+  <section id="achievements" class="achievements-section">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-label">MILESTONES</span>
+        <h2 class="section-title">Achievements & <span class="gradient-text">Education</span></h2>
+      </div>
+
+      <div class="achievements-grid">
+        <div class="achievement-card glass-card reveal-up" data-delay="0">
+          <div class="ach-glow cyan"></div>
+          <div class="ach-icon">🎓</div>
+          <h3>MCA — RGPV University</h3>
+          <p>Master of Computer Applications</p>
+          <span class="ach-badge">CGPA: 7.68 · 2023–2025</span>
+        </div>
+        <div class="achievement-card glass-card reveal-up" data-delay="100">
+          <div class="ach-glow purple"></div>
+          <div class="ach-icon">🏆</div>
+          <h3>B.Sc. Computer Science</h3>
+          <p>DAVV University</p>
+          <span class="ach-badge">68.78% · 2020–2023</span>
+        </div>
+        <div class="achievement-card glass-card reveal-up" data-delay="200">
+          <div class="ach-glow blue"></div>
+          <div class="ach-icon">🚀</div>
+          <h3>Joined as Frappe Developer</h3>
+          <p>Procure Infotech</p>
+          <span class="ach-badge">Mar 2026</span>
+        </div>
+        <div class="achievement-card glass-card reveal-up" data-delay="300">
+          <div class="ach-glow green"></div>
+          <div class="ach-icon">🏥</div>
+          <h3>Healthcare Platform Delivery</h3>
+          <p>PHIR Health - Production Launch</p>
+          <span class="ach-badge">2026</span>
+        </div>
+        <div class="achievement-card glass-card reveal-up" data-delay="400">
+          <div class="ach-glow amber"></div>
+          <div class="ach-icon">⚡</div>
+          <h3>EF SET English Certificate</h3>
+          <p>English Proficiency Certified</p>
+          <span class="ach-badge">Professional Level</span>
+        </div>
+        <div class="achievement-card glass-card reveal-up" data-delay="500">
+          <div class="ach-glow red"></div>
+          <div class="ach-icon">🌱</div>
+          <h3>Agroplast E-Commerce</h3>
+          <p>Full-Stack Django Platform</p>
+          <span class="ach-badge">Academic Project · 2024</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ TESTIMONIALS SECTION ══ -->
+  <section id="testimonials" class="testimonials-section">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-label">SOCIAL PROOF</span>
+        <h2 class="section-title">What People <span class="gradient-text">Say</span></h2>
+      </div>
+
+      <div class="testimonials-slider reveal-up">
+        <div class="testimonials-track" id="testimonials-track">
+          <div class="testimonial-card glass-card">
+            <div class="testimonial-quote">"</div>
+            <p>"Ritesh has an exceptional ability to understand business requirements and translate them directly into
+              working ERP solutions. His custom DocTypes and workflows saved us weeks of manual work."</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">PM</div>
+              <div>
+                <strong>Project Manager</strong>
+                <span>Procure Infotech</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card glass-card">
+            <div class="testimonial-quote">"</div>
+            <p>"The Daily Check-In Dashboard Ritesh built gave us real-time visibility into our entire workforce for the
+              first time. Incredibly clean implementation with zero bugs at launch."</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">CL</div>
+              <div>
+                <strong>Client, HR Tech</strong>
+                <span>VProCURE HRMS</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card glass-card">
+            <div class="testimonial-quote">"</div>
+            <p>"Ritesh's REST API design and integration work was flawless. He understands both the technical depth and
+              the business context — rare in a developer at his experience level."</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">TL</div>
+              <div>
+                <strong>Tech Lead</strong>
+                <span>Devaditya Technocrats</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonials-nav">
+          <button class="t-nav-btn" id="t-prev" aria-label="Previous testimonial">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M15 18l-6-6 6-6" />
+            </svg>
+          </button>
+          <div class="t-dots" id="t-dots"></div>
+          <button class="t-nav-btn" id="t-next" aria-label="Next testimonial">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M9 18l6-6-6-6" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ BLOG SECTION ══ -->
+  <section id="blog" class="blog-section">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-label">THOUGHTS</span>
+        <h2 class="section-title">Latest <span class="gradient-text">Articles</span></h2>
+        <p class="section-subtitle">Sharing knowledge about Frappe, ERP, Python, and software engineering</p>
+      </div>
+
+      <div class="blog-grid reveal-up">
+        <div class="blog-card glass-card">
+          <div class="blog-tag">Frappe</div>
+          <h3>Building Custom DocTypes in Frappe: A Complete Guide</h3>
+          <p>From schema design to server-side validation — everything you need to build production-ready DocTypes in
+            Frappe Framework.</p>
+          <div class="blog-footer">
+            <span class="blog-date">Coming Soon</span>
+            <span class="blog-read">5 min read</span>
+          </div>
+        </div>
+        <div class="blog-card glass-card">
+          <div class="blog-tag">ERPNext</div>
+          <h3>Designing REST APIs with Frappe's Whitelisted Methods</h3>
+          <p>Best practices for exposing secure, scalable REST APIs through Frappe's whitelist system for third-party
+            integrations.</p>
+          <div class="blog-footer">
+            <span class="blog-date">Coming Soon</span>
+            <span class="blog-read">7 min read</span>
+          </div>
+        </div>
+        <div class="blog-card glass-card">
+          <div class="blog-tag">Python</div>
+          <h3>Automating ERP Workflows with Python: Real-World Examples</h3>
+          <p>How I automated procurement and HRMS workflows using Python hooks, server scripts, and scheduled jobs in
+            ERPNext.</p>
+          <div class="blog-footer">
+            <span class="blog-date">Coming Soon</span>
+            <span class="blog-read">8 min read</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ CONTACT SECTION ══ -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-label">GET IN TOUCH</span>
+        <h2 class="section-title">Let's Build Something <span class="gradient-text">Together</span></h2>
+        <p class="section-subtitle">Open to full-time roles, freelance projects, and interesting ERP challenges</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info reveal-left">
+          <div class="contact-card glass-card">
+            <h3>Let's Connect</h3>
+            <p>Whether you need a Frappe developer, an ERP consultant, or a Python backend engineer — I'm open to new
+              opportunities and collaborations.</p>
+            <div class="contact-items">
+              <a href="mailto:riteshprajapati167@gmail.com" class="contact-item">
+                <div class="contact-item-icon">📧</div>
+                <div><span>Email</span><strong>riteshprajapati167@gmail.com</strong></div>
+              </a>
+              <a href="tel:+919770791263" class="contact-item">
+                <div class="contact-item-icon">📱</div>
+                <div><span>Phone</span><strong>+91-9770791263</strong></div>
+              </a>
+              <div class="contact-item">
+                <div class="contact-item-icon">📍</div>
+                <div><span>Location</span><strong>Indore, Madhya Pradesh, India</strong></div>
+              </div>
+              <a href="https://linkedin.com/in/ritesh-prajapati109" target="_blank" class="contact-item">
+                <div class="contact-item-icon">💼</div>
+                <div><span>LinkedIn</span><strong>ritesh-prajapati109</strong></div>
+              </a>
+            </div>
+            <div class="contact-availability">
+              <span class="availability-dot"></span>
+              <span>Available for new opportunities</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-wrap reveal-right">
+          <form id="contact-form" class="contact-form glass-card" novalidate>
+            <h3>Send a Message</h3>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="contact-name">Name</label>
+                <input type="text" id="contact-name" name="name" placeholder="Your Name" required />
+              </div>
+              <div class="form-group">
+                <label for="contact-email">Email</label>
+                <input type="email" id="contact-email" name="email" placeholder="your@email.com" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="contact-subject">Subject</label>
+              <input type="text" id="contact-subject" name="subject" placeholder="What's this about?" required />
+            </div>
+            <div class="form-group">
+              <label for="contact-message">Message</label>
+              <textarea id="contact-message" name="message" rows="5"
+                placeholder="Tell me about your project or opportunity..." required></textarea>
+            </div>
+            <button type="submit" id="contact-submit" class="btn-primary btn-full">
+              <span class="btn-text">Send Message</span>
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="22" y1="2" x2="11" y2="13" />
+                <polygon points="22 2 15 22 11 13 2 9 22 2" />
+              </svg>
+            </button>
+            <div id="form-status" class="form-status"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ FOOTER ══ -->
+  <footer class="footer">
+    <div class="footer-aurora"></div>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <svg viewBox="0 0 40 40" width="40" height="40">
+              <polygon points="20,2 38,11 38,29 20,38 2,29 2,11" fill="none" stroke="url(#footerGrad)"
+                stroke-width="2" />
+              <text x="20" y="26" text-anchor="middle" fill="url(#footerGrad)" font-size="16" font-weight="700">R</text>
+              <defs>
+                <linearGradient id="footerGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#00d4ff" />
+                  <stop offset="100%" stop-color="#7c3aed" />
+                </linearGradient>
+              </defs>
+            </svg>
+            <span>Ritesh Prajapati</span>
+          </div>
+          <p>Frappe Developer · ERPNext · Python · REST API</p>
+          <div class="footer-socials">
+            <a href="https://github.com/Riteshprajapati109" target="_blank" aria-label="GitHub" class="footer-social">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                <path
+                  d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z" />
+              </svg>
+            </a>
+            <a href="https://linkedin.com/in/ritesh-prajapati109" target="_blank" aria-label="LinkedIn"
+              class="footer-social">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                <path
+                  d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+              </svg>
+            </a>
+            <a href="mailto:riteshprajapati167@gmail.com" aria-label="Email" class="footer-social">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                <polyline points="22,6 12,13 2,6" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-links-group">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-group">
+          <h4>Shortcuts</h4>
+          <ul>
+            <li><span class="kbd">Ctrl + K</span> Command Palette</li>
+            <li><span class="kbd">G</span> Go to GitHub</li>
+            <li><span class="kbd">L</span> Go to LinkedIn</li>
+            <li><span class="kbd">R</span> Download Resume</li>
+            <li><span class="kbd">T</span> Go to Terminal</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>Designed & Built with ❤️ by <strong>Ritesh Prajapati</strong> · Indore, India</p>
+        <p class="footer-year">© <span id="footer-year">2025</span> All rights reserved</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ══ CONFETTI CANVAS ══ -->
+  <canvas id="confetti-canvas" class="confetti-canvas"></canvas>
+
+  <!-- ══ FLOATING DOCK ══ -->
+  <div class="floating-dock" id="floating-dock">
+    <a href="#hero" class="dock-item" data-tooltip="Home">
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+        <polyline points="9 22 9 12 15 12 15 22" />
+      </svg>
+    </a>
+    <a href="#about" class="dock-item" data-tooltip="About">
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+        <circle cx="12" cy="7" r="4" />
+      </svg>
+    </a>
+    <a href="#skills" class="dock-item" data-tooltip="Skills">
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+        <polygon
+          points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+      </svg>
+    </a>
+    <a href="#projects" class="dock-item" data-tooltip="Projects">
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+        <rect x="2" y="3" width="20" height="14" rx="2" />
+        <line x1="8" y1="21" x2="16" y2="21" />
+        <line x1="12" y1="17" x2="12" y2="21" />
+      </svg>
+    </a>
+    <a href="#terminal" class="dock-item" data-tooltip="Terminal">
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+        <polyline points="4 17 10 11 4 5" />
+        <line x1="12" y1="19" x2="20" y2="19" />
+      </svg>
+    </a>
+    <a href="#contact" class="dock-item" data-tooltip="Contact">
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+      </svg>
+    </a>
+    <div class="dock-divider"></div>
+    <button id="dock-theme" class="dock-item" data-tooltip="Toggle Theme">
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+      </svg>
+    </button>
+  </div>
+
+  <!-- ══ TOAST NOTIFICATION ══ -->
+  <div id="toast" class="toast" role="alert" aria-live="polite"></div>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
