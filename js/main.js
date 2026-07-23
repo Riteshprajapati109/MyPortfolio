@@ -553,13 +553,13 @@ const terminalCommands = {
 <span class="t-success">Professional Experience:</span>
 <span class="t-output">
 [Current] Frappe Developer @ Procure Infotech, Indore
-          Mar 2025 — Present
+          Mar 2026 - Present
           · Custom Frappe apps & ERPNext modules
           · REST API design & integration
           · Linux server deployment & management
 
 [Past]    Software Developer Trainee @ Devaditya Technocrats LLP
-          Jul 2024 — Feb 2025
+          Jul 2025 - Feb 2026
           · Python backend development on Linux
           · Data pipeline optimization
           · Shell scripting & deployment automation
